@@ -1,0 +1,30 @@
+<div class="container" id="Display" >
+    <head>
+        <style>
+            table {
+                display: table;
+                border-collapse: separate;
+                border-spacing: 10px;
+            }
+        </style>
+    </head>
+    <div style="font-family: Calibri" class="container-fluid text-left"><h1>Display page</h1></div>
+    <br/>
+    <br/>
+
+        <div ng-controller="DisplayController" class="container-fluid text-left">
+
+            <table>
+                <tr>
+                    <th>Ex_id</th>
+                    <th>Ex_value</th>
+
+                </tr>
+                <tr ng-repeat="line in allLines  track by $index">
+                    <td style="width: 50%">{{line.Ex_id}}</td>
+                    <td style="width: 50%">{{line.Ex_value}}</td>
+                </tr>
+            </table>
+
+        </div>
+</div>

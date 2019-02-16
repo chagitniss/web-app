@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="src/angular.js"></script>
+    <script src="src/angular-route.js"></script>
+    <script src="src/angular-mocks.js"></script>
+    <script src="src/jquery-2.2.3.min.js"></script>
+    <script src="src/jquery-2.2.3.js"></script>
+    <script src="src/bootstrap.min.js"></script>
+    <script src="src/jquery.js"></script>
+
+    <script src="controllers/DisplayController.js"></script>
+    <script src="controllers/InsertController.js"></script>
+
+    <script src="app.js"></script>
+
+    <title>Example</title>
+
+</head>
+
+<body ng-app="myApp">
+
+<nav class="navbar navbar-inverse top-nav">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav navbar-left nav-tabs nav-pills" role="tablist" >
+            <li><a style="font-family: Calibri; font-size:15px" href="#/Insert">Insert</a></li>
+            <li><a style="font-family: Calibri; font-size:15px" href="#/Display">Display</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!--<div style="font-family: Calibri" class="container-fluid text-left">-->
+    <!--<h6 style="font-size: 20px">WELCOME!</h6>-->
+<!--</div>-->
+
+<div class="row">
+    <div ng-view></div>
+</div>
+
+
+<br/>
+
+<footer style="font-family: Calibri" class="container-fluid text-center">
+
+</footer>
+</body>
+</html>
